@@ -18,6 +18,7 @@ Notre application inclut également des fonctionnalités supplémentaires telles
 -   L'actualisation **automatique** des calculs si vous changez les anneaux de la résistance.
 -   La capacité à convertir la valeur en différentes unités : **kOhms**, **MOhms** et **GOhms**.
 -   La valeur de l'anneau selectionné est affiché dans une zone de texte adjacente.
+-   L'application est utilisable pour les personnes atteintes de daltonisme, les noms des couleurs étant affichés sur leurs boutons respectifs.
 
 ## Statut du projet
 
