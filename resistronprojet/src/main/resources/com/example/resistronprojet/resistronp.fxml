@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import javafx.stage.Stage?>
+
+<Stage height="1024.0" width="1280.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.resistronprojet.ResistronProjetController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="731.0" prefWidth="1230.0">
+            <children>
+               <GridPane layoutX="479.0" layoutY="397.0" prefHeight="74.0" prefWidth="663.0">
+                 <columnConstraints>
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="199.0" minWidth="10.0" prefWidth="169.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="275.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="132.0" minWidth="9.0" prefWidth="9.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="136.0" minWidth="0.0" prefWidth="136.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Valeur de la résistance : " textAlignment="RIGHT" wrappingWidth="170.70703125">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tolérance :" textAlignment="RIGHT" wrappingWidth="166.275390625" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <TextField fx:id="mValueResistance" prefHeight="17.0" prefWidth="294.0" GridPane.columnIndex="1" />
+                     <TextField fx:id="mValueTolerance" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <Label fx:id="mLabelUnite" prefHeight="17.0" prefWidth="132.0" GridPane.columnIndex="3" />
+                     <Label text="\%" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  </children>
+               </GridPane>
+               <GridPane layoutX="14.0" layoutY="553.0" prefHeight="166.0" prefWidth="1167.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="159.0" minWidth="10.0" prefWidth="159.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="135.0" minWidth="10.0" prefWidth="77.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="79.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.0" minWidth="10.0" prefWidth="75.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.0" minWidth="10.0" prefWidth="76.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0" prefWidth="71.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="181.0" minWidth="10.0" prefWidth="75.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="10.0" prefWidth="72.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="77.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.0" minWidth="10.0" prefWidth="76.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.0" minWidth="10.0" prefWidth="77.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="74.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="65.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="212.0" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="38.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="54.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="71.0" minHeight="10.0" prefHeight="36.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anneau 1 : " textAlignment="RIGHT" wrappingWidth="138.138671875">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anneau 2 :" textAlignment="RIGHT" wrappingWidth="134.13671875" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tolérance :" textAlignment="RIGHT" wrappingWidth="134.13671875" GridPane.rowIndex="3">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Button fx:id="mBlackR1" mnemonicParsing="false" onAction="#mBlackR1Action" style="-fx-background-color: black;" text="  Noir  " textFill="#fcfcfc" GridPane.columnIndex="1" />
+                     <Button fx:id="mBrownR1" mnemonicParsing="false" onAction="#mBrownR1Action" style="-fx-background-color: brown;" text="Marron" textFill="WHITE" GridPane.columnIndex="2" />
+                     <Button fx:id="mRedR1" mnemonicParsing="false" onAction="#mRedR1Action" style="-fx-background-color: red;" text="Rouge" textFill="WHITE" GridPane.columnIndex="3" />
+                     <Button fx:id="mBlackR2" mnemonicParsing="false" onAction="#mBlackR2Action" style="-fx-background-color: black;" text="  Noir  " textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                     <Button fx:id="mBrownR2" mnemonicParsing="false" onAction="#mBrownR2Action" style="-fx-background-color: brown;" text="Marron" textFill="#f8f8f8" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                     <Button fx:id="mBlackM" mnemonicParsing="false" onAction="#mBlackMAction" style="-fx-background-color: black;" text="  Noir  " textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplicateur :" textAlignment="RIGHT" wrappingWidth="134.154296875" GridPane.rowIndex="2">
+                        <font>
+                           <Font size="14.0" />
+                        </font></Text>
+                     <Button fx:id="mBrownM" mnemonicParsing="false" onAction="#mBrownMAction" style="-fx-background-color: brown;" text="Marron" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                     <Button fx:id="mBrownT" mnemonicParsing="false" onAction="#mBrownTAction" style="-fx-background-color: brown;" text="Marron" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                     <Button fx:id="mRedR2" mnemonicParsing="false" onAction="#mRedR2Action" style="-fx-background-color: red;" text="Rouge" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                     <Button fx:id="mRedM" mnemonicParsing="false" onAction="#mRedMAction" style="-fx-background-color: red;" text="Rouge" textFill="#f8f8f8" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                     <Button fx:id="mRedT" mnemonicParsing="false" onAction="#mRedTAction" style="-fx-background-color: red;" text="Rouge" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                     <Button fx:id="mOrangeR1" mnemonicParsing="false" onAction="#mOrangeR1Action" style="-fx-background-color: orange;" text="Orange" GridPane.columnIndex="4" />
+                     <Button fx:id="mOrangeR2" mnemonicParsing="false" onAction="#mOrangeR2Action" style="-fx-background-color: orange;" text="Orange" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                     <Button fx:id="mOrangeM" mnemonicParsing="false" onAction="#mOrangeMAction" style="-fx-background-color: orange;" text="Orange" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                     <Button fx:id="mYellowR1" mnemonicParsing="false" onAction="#mYellowR1Action" style="-fx-background-color: yellow;" text="Jaune " GridPane.columnIndex="5" />
+                     <Button fx:id="mYellowR2" mnemonicParsing="false" onAction="#mYellowR2Action" style="-fx-background-color: yellow;" text="Jaune " GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                     <Button fx:id="mYellowM" mnemonicParsing="false" onAction="#mYellowMAction" style="-fx-background-color: yellow;" text="Jaune " GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                     <Button fx:id="mGreenR1" mnemonicParsing="false" onAction="#mGreenR1Action" style="-fx-background-color: green;" text="   Vert  " textFill="WHITE" GridPane.columnIndex="6" />
+                     <Button fx:id="mGreenR2" mnemonicParsing="false" onAction="#mGreenR2Action" style="-fx-background-color: green;" text="   Vert  " textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="1" />
+                     <Button fx:id="mGreenM" mnemonicParsing="false" onAction="#mGreenMAction" style="-fx-background-color: green;" text="   Vert  " textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                     <Button fx:id="mGreenT" mnemonicParsing="false" onAction="#mGreenTAction" style="-fx-background-color: green;" text="   Vert  " textFill="WHITE" GridPane.columnIndex="6" GridPane.rowIndex="3" />
+                     <Button fx:id="mBlueR1" mnemonicParsing="false" onAction="#mBlueR1Action" style="-fx-background-color: blue;" text="  Bleu  " textFill="WHITE" GridPane.columnIndex="7" />
+                     <Button fx:id="mBlueR2" mnemonicParsing="false" onAction="#mBlueR2Action" style="-fx-background-color: blue;" text="  Bleu  " textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="1" />
+                     <Button fx:id="mBlueM" mnemonicParsing="false" onAction="#mBlueMAction" style="-fx-background-color: blue;" text="  Bleu  " textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="2" />
+                     <Button fx:id="mBlueT" mnemonicParsing="false" onAction="#mBlueTAction" style="-fx-background-color: blue;" text="  Bleu  " textFill="WHITE" GridPane.columnIndex="7" GridPane.rowIndex="3" />
+                     <Button fx:id="mPurpleR1" mnemonicParsing="false" onAction="#mPurpleR1Action" style="-fx-background-color: purple;" text="  Violet " textFill="WHITE" GridPane.columnIndex="8" />
+                     <Button fx:id="mPurpleR2" mnemonicParsing="false" onAction="#mPurpleR2Action" style="-fx-background-color: purple;" text=" Violet  " textFill="#fcfcfc" GridPane.columnIndex="8" GridPane.rowIndex="1" />
+                     <Button fx:id="mPurpleM" mnemonicParsing="false" onAction="#mPurpleMAction" style="-fx-background-color: purple;" text=" Violet  " textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="2" />
+                     <Button fx:id="mPurpleT" mnemonicParsing="false" onAction="#mPurpleTAction" style="-fx-background-color: purple;" text=" Violet  " textFill="WHITE" GridPane.columnIndex="8" GridPane.rowIndex="3" />
+                     <Button fx:id="mGreyR1" mnemonicParsing="false" onAction="#mGreyR1Action" style="-fx-background-color: grey;" text="   Gris   " textFill="WHITE" GridPane.columnIndex="9" />
+                     <Button fx:id="mGreyR2" mnemonicParsing="false" onAction="#mGreyR2Action" style="-fx-background-color: grey;" text="   Gris   " textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="1" />
+                     <Button fx:id="mGreyM" mnemonicParsing="false" onAction="#mGreyMAction" style="-fx-background-color: grey;" text="   Gris   " textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="2" />
+                     <Button fx:id="mGreyT" mnemonicParsing="false" onAction="#mGreyTAction" style="-fx-background-color: grey;" text="   Gris   " textFill="WHITE" GridPane.columnIndex="9" GridPane.rowIndex="3" />
+                     <Button fx:id="mWhiteR2" mnemonicParsing="false" onAction="#mWhiteR2Action" style="-fx-background-color: white;" text="  Blanc   " GridPane.columnIndex="10" GridPane.rowIndex="1" />
+                     <Button fx:id="mWhiteM" mnemonicParsing="false" onAction="#mWhiteMAction" style="-fx-background-color: white;" text="  Blanc   " GridPane.columnIndex="10" GridPane.rowIndex="2" />
+                     <Button fx:id="mWhiteR1" mnemonicParsing="false" onAction="#mWhiteR1Action" style="-fx-background-color: white;" text="  Blanc   " GridPane.columnIndex="10" />
+                     <Button fx:id="mGoldM" mnemonicParsing="false" onAction="#mGoldMAction" style="-fx-background-color: gold;" text="   Or    " GridPane.columnIndex="11" GridPane.rowIndex="2" />
+                     <Button fx:id="mGoldT" mnemonicParsing="false" onAction="#mGoldTAction" style="-fx-background-color: gold;" text="   Or    " GridPane.columnIndex="11" GridPane.rowIndex="3" />
+                     <Button fx:id="mSilverM" mnemonicParsing="false" onAction="#mSilverMAction" style="-fx-background-color: silver;" text="Argent " GridPane.columnIndex="12" GridPane.rowIndex="2" />
+                     <Button fx:id="mSilverT" mnemonicParsing="false" onAction="#mSilverTAction" style="-fx-background-color: silver;" text="Argent " GridPane.columnIndex="12" GridPane.rowIndex="3" />
+                     <TextField fx:id="mValueRing1" GridPane.columnIndex="13" />
+                     <TextField fx:id="mValueRing2" GridPane.columnIndex="13" GridPane.rowIndex="1" />
+                     <TextField fx:id="mValueRing3" GridPane.columnIndex="13" GridPane.rowIndex="2" />
+                     <TextField fx:id="mValueRing4" GridPane.columnIndex="13" GridPane.rowIndex="3" />
+                  </children>
+                  <padding>
+                     <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  </padding>
+               </GridPane>
+               <ImageView fitHeight="177.0" fitWidth="482.0" layoutX="604.0" layoutY="193.0">
+                  <image>
+                     <Image url="@schema.png" />
+                  </image>
+               </ImageView>
+               <ImageView fitHeight="252.0" fitWidth="340.0" layoutX="59.0" layoutY="219.0">
+                  <image>
+                     <Image url="@tableau.PNG" />
+                  </image>
+               </ImageView>
+               <GridPane layoutX="28.0" layoutY="97.0" prefHeight="85.0" prefWidth="1202.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="29.0" minHeight="3.0" prefHeight="3.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="65.0" minHeight="10.0" prefHeight="65.0" vgrow="SOMETIMES" />
+                     <RowConstraints maxHeight="30.0" minHeight="2.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="68.0" minHeight="10.0" prefHeight="68.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Application de calcul de la valeur d'une résistance" textAlignment="CENTER" wrappingWidth="1201.60546875" GridPane.rowIndex="3">
+                        <font>
+                           <Font size="22.0" />
+                        </font>
+                     </Text>
+                     <Text strokeType="OUTSIDE" strokeWidth="0.0" text="RESISTOR CALCULATOR" textAlignment="CENTER" wrappingWidth="1201.6796875" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="31.0" />
+                        </font>
+                     </Text>
+                  </children>
+               </GridPane>
+               <Text layoutX="59.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sélectionner la couleur de chaque anneau pour calculer la valeur de la résistance :" wrappingWidth="648.009765625">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Text>
+               <Label fx:id="ColorRing1" layoutX="719.0" layoutY="243.0" prefHeight="89.0" prefWidth="11.0" />
+               <Label fx:id="ColorRing2" layoutX="793.0" layoutY="256.0" prefHeight="64.0" prefWidth="11.0" />
+               <Label fx:id="ColorRing3" layoutX="868.0" layoutY="253.0" prefHeight="68.0" prefWidth="11.0" />
+               <Label fx:id="ColorRing4" layoutX="932.0" layoutY="241.0" prefHeight="89.0" prefWidth="10.0" />
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>
